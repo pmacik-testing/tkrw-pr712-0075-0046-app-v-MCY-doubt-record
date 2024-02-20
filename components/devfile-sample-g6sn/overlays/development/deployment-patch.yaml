@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-g6sn
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0046-tenant/tkrw-pr712-0075-0046-app/devfile-sample-g6sn@sha256:1b23115e6f89a4db73eb8c7b36bde43e879a03a835b633de03d3f8916e8992ea
+        name: my-nodejs
+        resources: {}
+status: {}
